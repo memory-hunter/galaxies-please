@@ -1,9 +1,5 @@
-from ast import main
-from statistics import mode
 import sys
-from tkinter import font
 import pygame as pg
-import pygame_menu as pgm
 from pygame.locals import *
 import constants as c
 import helpers as h
