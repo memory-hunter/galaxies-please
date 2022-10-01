@@ -1,7 +1,11 @@
 FPS = 60
-WIDTH = 640
-HEIGHT = 480
+WIDTH = 1280
+HEIGHT = 720
 TITLE = "Space Checkpoint"
 BARLOW = "../res/fonts/barlow.ttf"
 TITILLIUM = "../res/fonts/titillium.ttf"
 ICON = "../res/logos/blackredbig.png"
+WEBB = "../res/images/webb.jpg"
+MMBG = "../res/sounds/mmbg.ogg"
+IGBG = "../res/sounds/igbg.ogg"
+MUSIC = True
