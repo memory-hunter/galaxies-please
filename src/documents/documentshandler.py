@@ -1,14 +1,11 @@
 import json
-
-import pygame
 import random
 import document
-
 
 class DocumentsHandler:
     def __init__(self, docnum):
         self.docnum = docnum
-        self.data = json.loads(open("objects.json", "r").read())
+        self.data = json.loads(open("../../res/data/objects.json", "r").read())
         self.playing = False
 
     def play(self):
@@ -39,12 +36,3 @@ class DocumentsHandler:
             if len(playdocs) == 0:
                 print(mistakes)
                 return True
-
-
-
-
-do = DocumentsHandler(7)
-if do.play():
-    print("congrats")
-else:
-    print("you loose")
