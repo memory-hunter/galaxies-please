@@ -1,3 +1,4 @@
+from turtle import onclick
 import pygame_menu as pgm
 import constants as c
 
@@ -12,8 +13,8 @@ def setup_custom_theme():
     return custom_theme
 
 def setup_main_menu():
-    menu = pgm.Menu(c.TITLE, c.WIDTH/2, c.HEIGHT/2, theme=setup_custom_theme(), center_content=True, mouse_enabled=True, mouse_motion_selection=True, mouse_visible=True)
-    menu.add.button("Play")
+    menu = pgm.Menu(c.TITLE, c.WIDTH/2, c.HEIGHT/2, theme=setup_custom_theme(), center_content=True, mouse_enabled=True, mouse_motion_selection=True, mouse_visible=True, onclose=pgm.events.CLOSE)
+    menu.add.button("Play", pgm.events.CLOSE)
     menu.add.button("Settings")
     menu.add.button("Quit", pgm.events.EXIT)
 

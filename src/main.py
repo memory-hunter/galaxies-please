@@ -17,21 +17,22 @@ def runpg():
 
   while True:
     # Update
+    events = pg.event.get()
     if main_menu.is_enabled():
-        main_menu.update()
+        main_menu.update(events)
 
-    for event in pg.event.get():
+    for event in events:
       if event.type == QUIT:
         pg.quit()
         sys.exit()
     
     # Draw
     screen.fill((0, 0, 0))
-    main_menu.draw(screen)
+
+    if main_menu.is_enabled():
+        main_menu.draw(screen)
+        
     pg.display.flip()
-  
-    fpsClock.tick(c.FPS)
-    print("FPS: " + str(fpsClock.get_fps()))
 
 if __name__ == '__main__':
   runpg()
