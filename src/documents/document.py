@@ -59,5 +59,5 @@ class Document:
                 self.size = self.false_data["size"]
         self.fact = False
 
-    def arrayfy(self):
+    def to_array(self):
         return [self.name, self.img, self.distance, self.type, self.luminosity, self.size, self.doctype, self.fact]
