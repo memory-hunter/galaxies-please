@@ -21,6 +21,8 @@ def runpg():
 
   width, height = c.WIDTH, c.HEIGHT
   screen = pg.display.set_mode((width, height))
+  pg.display.set_caption(c.TITLE)
+  pg.display.set_icon(pg.image.load("../res/logos/blackredbig.png"))
 
   dt = 1/c.FPS
   while True:
