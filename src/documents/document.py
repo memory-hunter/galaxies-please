@@ -7,8 +7,8 @@ class Document:
         self.img = data["img"]
         self.distance = data["distance"]
         self.type = data["type"]
-        self.luminosity = data["luminosity"]
         self.size = data["size"]
+        self.constellation = data["constellation"]
         self.doctype = data["doctype"]
         self.false_data = false_data
         self.fact = True
@@ -37,8 +37,8 @@ class Document:
             self.type = self.false_data["type"]
             amountfalsified += 1
 
-        if falsifyindex[3] == 2 and self.luminosity != self.false_data["luminosity"]:
-            self.luminosity = self.false_data["luminosity"]
+        if falsifyindex[3] == 2 and self.luminosity != self.false_data["constellation"]:
+            self.luminosity = self.false_data["constellation"]
             amountfalsified += 1
 
         if falsifyindex[4] == 2 and self.size != self.false_data["size"]:
@@ -46,7 +46,7 @@ class Document:
             amountfalsified += 1
 
         if amountfalsified == 0:
-            defran = random.randint(0,4)
+            defran = random.randint(0, 4)
             if defran == 0:
                 self.img = self.false_data["img"]
             elif defran == 1:
@@ -54,10 +54,10 @@ class Document:
             elif defran == 2:
                 self.type = self.false_data["type"]
             elif defran == 3:
-                self.luminosity = self.false_data["luminosity"]
+                self.luminosity = self.false_data["constellation"]
             elif defran == 4:
                 self.size = self.false_data["size"]
         self.fact = False
 
     def to_array(self):
-        return [self.name, self.img, self.distance, self.type, self.luminosity, self.size, self.doctype, self.fact]
+        return [self.name, self.img, self.distance, self.type, self.constellation, self.size, self.doctype, self.fact]

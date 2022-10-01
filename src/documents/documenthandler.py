@@ -2,23 +2,25 @@ import json
 import random
 import document
 
+
 class DocumentHandler:
     def __init__(self, docnum):
         self.docnum = docnum
-        self.data = json.loads(open("../../res/data/objects.json", "r").read())
+        self.data = json.loads(open("../../res/data/data.json", "r").read())
         self.playing = False
 
     def play(self):
         self.playing = True
         mistakes = 0
         playdocs = random.sample(self.data, self.docnum)
-        for i in range(0,len(playdocs)):
+        for i in range(0, len(playdocs)):
             x = self.data.index(playdocs[i])
-            j = list(range(0,x)) + list(range(x+1,len(self.data)))
-            playdocs[i] = document.Document(playdocs[i],self.data[random.choice(j)]).present()
+            j = list(range(0, x)) + list(range(x+1, len(self.data)))
+            playdocs[i] = document.Document(
+                playdocs[i], self.data[random.choice(j)]).present()
 
         while self.playing:
-            round = playdocs[0].arrayfy()
+            round = playdocs[0].to_array()
             print(round)
             action = input("type acc to Accept, den to Deny: \n")
             if action == "acc":
