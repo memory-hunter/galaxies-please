@@ -1,0 +1,11 @@
+[
+  {
+    "name":"galaxy1",
+    "img": "",
+    "distance": 100,
+    "type": "red dwarf",
+    "size": 100,
+    "constellation": "viri",
+    "doctype": "galaxy"
+  }
+]
