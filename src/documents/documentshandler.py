@@ -21,8 +21,6 @@ class DocumentsHandler:
             playdocs[i] = document.Document(playdocs[i],self.data[random.choice(j)]).present()
 
         while self.playing:
-            font = pygame.font.Font('freesansbold.ttf', 32)
-
             round = playdocs[0].arrayfy()
             print(round)
             action = input("type acc to Accept, den to Deny: \n")
