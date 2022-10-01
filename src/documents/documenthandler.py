@@ -2,7 +2,7 @@ import json
 import random
 import document
 
-class DocumentsHandler:
+class DocumentHandler:
     def __init__(self, docnum):
         self.docnum = docnum
         self.data = json.loads(open("../../res/data/objects.json", "r").read())
