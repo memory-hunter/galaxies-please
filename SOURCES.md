@@ -27,7 +27,11 @@ https://www.spaceappschallenge.org/documents/393/2020_fonts.zip
 
 https://www.spaceappschallenge.org/documents/694/2022_Space_Apps_Logos.zip
 https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png
+https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/NASA_Worm_logo_%28black%29.svg/1280px-NASA_Worm_logo_%28black%29.svg.png
+https://www.citypng.com/photo/14001/hd-blank-empty-clear-blue-rubber-stamp-png
+
 
 # Tools used
 
 https://www.canva.com
+https://app.pitch.com
