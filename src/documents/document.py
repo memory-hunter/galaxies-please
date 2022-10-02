@@ -1,10 +1,10 @@
 import random
 
-
 class Document:
     def __init__(self, data, false_data):
         self.name = data["name"]
         self.img = data["img"]
+        self.jwtsimage = data["jwstimage"]
         self.distance = data["distance"]
         self.type = data["type"]
         self.size = data["size"]
@@ -24,37 +24,31 @@ class Document:
                         random.randint(1, 2)]
         amountfalsified = 0
 
-        if falsifyindex[0] == 2:
-            self.img = self.false_data["img"]
-            amountfalsified += 1
-
-        if falsifyindex[1] == 2 and self.distance != self.false_data["distance"]:
+        if falsifyindex[0] == 2 and self.distance != self.false_data["distance"]:
             self.distance = self.false_data["distance"]
             amountfalsified += 1
 
-        if falsifyindex[2] == 2 and self.type != self.false_data["type"]:
+        if falsifyindex[1] == 2 and self.type != self.false_data["type"]:
             self.type = self.false_data["type"]
             amountfalsified += 1
 
-        if falsifyindex[3] == 2 and self.luminosity != self.false_data["constellation"]:
+        if falsifyindex[2] == 2 and self.luminosity != self.false_data["constellation"]:
             self.luminosity = self.false_data["constellation"]
             amountfalsified += 1
 
-        if falsifyindex[4] == 2 and self.size != self.false_data["size"]:
+        if falsifyindex[3] == 2 and self.size != self.false_data["size"]:
             self.size = self.false_data["size"]
             amountfalsified += 1
 
         if amountfalsified == 0:
-            defran = random.randint(0, 4)
+            defran = random.randint(0, 3)
             if defran == 0:
-                self.img = self.false_data["img"]
-            elif defran == 1:
                 self.distance = self.false_data["distance"]
-            elif defran == 2:
+            elif defran == 1:
                 self.type = self.false_data["type"]
-            elif defran == 3:
+            elif defran == 2:
                 self.luminosity = self.false_data["constellation"]
-            elif defran == 4:
+            elif defran == 3:
                 self.size = self.false_data["size"]
         self.fact = False
 
