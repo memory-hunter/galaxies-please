@@ -2,7 +2,8 @@ import pygame as pg
 
 
 class Button:
-    def __init__(self, x, y, image, scale=1):
+    def __init__(self, bid, x, y, image, scale=1):
+        self.bid = bid
         width = image.get_width()
         height = image.get_height()
         self.image = pg.transform.scale(image, (int(width * scale), int(height * scale)))

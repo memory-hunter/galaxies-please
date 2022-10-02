@@ -1,19 +1,49 @@
 [
   {
-    "name":"Cartwheel Galaxy",
+    "name": "Cartwheel Galaxy",
     "img": "../res/images/cartwheeltruecropped_out.jpg",
     "jwstimage": "../res/images/cartwheeltrue.jpg",
-    "distance": "500Mly.",
+    "distance": 500000000,
     "type": "S pec (Ring)",
     "size": "144,300 ly.",
     "constellation": "Sculptor",
     "doctype": "galaxy"
   },
   {
-    "name":"NGC 7318",
+    "name": "NGC 7318",
     "img": "../res/images/18falsecropped_out.png",
     "jwstimage": "../res/images/quintettrue.jpg",
-    "distance": "25Mly.",
+    "distance": 25000000,
+    "type": "Spiral",
+    "size": "20,000 ly.",
+    "constellation": "Leo",
+    "doctype": "galaxy"
+  },
+  {
+    "name": "NGC 7318",
+    "img": "../res/images/18falsecropped_out.png",
+    "jwstimage": "../res/images/quintettrue.jpg",
+    "distance": 25000000,
+    "type": "Spiral",
+    "size": "20,000 ly.",
+    "constellation": "Leo",
+    "doctype": "galaxy"
+  },
+  {
+    "name": "NGC 7319",
+    "img": "../res/images/19truecropped_out.png",
+    "jwstimage": "../res/images/quintettrue.jpg",
+    "distance": 25000000,
+    "type": "Spiral",
+    "size": "20,000 ly.",
+    "constellation": "Leo",
+    "doctype": "galaxy"
+  },
+  {
+    "name": "M74",
+    "img": "../res/images/m74truecropped_out.jpg",
+    "jwstimage": "../res/images/m74true.jpg",
+    "distance": 30000000,
     "type": "Spiral",
     "size": "20,000 ly.",
     "constellation": "Leo",
