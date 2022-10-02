@@ -4,7 +4,7 @@ class Document:
     def __init__(self, data, false_data):
         self.name = data["name"]
         self.img = data["img"]
-        self.jwtsimage = data["jwstimage"]
+        self.jwstimage = data["jwstimage"]
         self.distance = data["distance"]
         self.type = data["type"]
         self.size = data["size"]
@@ -32,8 +32,8 @@ class Document:
             self.type = self.false_data["type"]
             amountfalsified += 1
 
-        if falsifyindex[2] == 2 and self.luminosity != self.false_data["constellation"]:
-            self.luminosity = self.false_data["constellation"]
+        if falsifyindex[2] == 2 and self.constellation != self.false_data["constellation"]:
+            self.constellation = self.false_data["constellation"]
             amountfalsified += 1
 
         if falsifyindex[3] == 2 and self.size != self.false_data["size"]:
@@ -47,10 +47,10 @@ class Document:
             elif defran == 1:
                 self.type = self.false_data["type"]
             elif defran == 2:
-                self.luminosity = self.false_data["constellation"]
+                self.constellation = self.false_data["constellation"]
             elif defran == 3:
                 self.size = self.false_data["size"]
         self.fact = False
 
     def to_array(self):
-        return [self.name, self.img, self.distance, self.type, self.constellation, self.size, self.doctype, self.fact]
+        return [self.name, self.img, self.jwstimage, self.distance, self.type, self.size, self.constellation, self.doctype, self.fact]
