@@ -10,16 +10,16 @@ class Button():
         self.rect = self.image.get_rect()
         self.rect.center = (x, y)
         self.clicked = False
+        self.action = False
 
     def draw(self, screen):
-        action = False
         pos = pg.mouse.get_pos()
 
         if self.rect.collidepoint(pos):
             self.image = pg.transform.scale(self.original_image, (int(self.rect.width * 1.1), int(self.rect.height * 1.1)))
             if pg.mouse.get_pressed()[0] == 1 and self.clicked == False:
                 self.clicked = True
-                action = True
+                self.action = True
         else:
             self.image = self.original_image
 
@@ -27,5 +27,3 @@ class Button():
             self.clicked = False
 
         screen.blit(self.image, (self.rect.x, self.rect.y))
-
-        return action

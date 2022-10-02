@@ -14,6 +14,9 @@ def play_state(screen, items):
         else:
             screen.blit(item, (0, 0))
 
+def jwst_map_state():
+    pass
+
 def change_music():
     if(c.MUSIC):
         if c.TRACKSTATE == -1:
@@ -48,7 +51,7 @@ def run_game():
     table = pg.image.load(c.WORKTABLE).convert_alpha()
     table = pg.transform.scale(table, (c.WIDTH, c.HEIGHT))
 
-    button = b.Button(c.WIDTH/1.175, c.HEIGHT/2, pg.image.load(c.WEBBBUTTON).convert_alpha(), 0.4)
+    jwstbutton = b.Button(c.WIDTH/1.175, c.HEIGHT/2, pg.image.load(c.WEBBBUTTON).convert_alpha(), 0.3)
 
     change_music()
     c.GAMESTATE = 0
@@ -78,7 +81,10 @@ def run_game():
         if main_menu.is_enabled():
             main_menu.draw(screen)
         else:
-            play_state(screen, [table, button])
+            if jwstbutton.action:
+                jwstbutton.action = False
+                jwst_map_state()
+            play_state(screen, [table, jwstbutton])
 
         pg.display.flip()
 

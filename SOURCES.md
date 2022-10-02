@@ -1,9 +1,18 @@
 # Images:
 
-https://www.flickr.com/photos/nasawebbtelescope/51412123217/in/album-72157624413830771/
+https://www.flickr.com/photos/nasawebbtelescope/ (All JWST images of galaxies)
 https://www.freepik.com/free-photo/beige-wooden-textured-flooring-background_17848071.htm
 https://pngimg.com/image/18883
 https://upload.wikimedia.org/wikipedia/commons/6/6a/JWST_spacecraft_model_2.png
+https://www.nasa.gov/mission_pages/WISE/images/index.html
+https://www.spitzer.caltech.edu/news/ssc2019-15-sixteen-images-for-spitzers-sweet-16
+https://www.spitzer.caltech.edu/images?subject=galaxy
+https://www.nasa.gov/content/stars-and-galaxies
+https://en.wikipedia.org/wiki/Stephan%27s_Quintet#/media/File:Stephan's_Quintet_Hubble_2009.full_denoise.jpg
+https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw1036a.jpg
+https://cdn.esawebb.org/archives/images/screen/potm2209b.jpg
+https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m74-xlarge_web.jpg?itok=CFmoryX_
+https://www.nasa.gov/images/content/384667main_ero_stephan_quintet_full_full.jpg
 
 # Background Music:
 

@@ -1,4 +1,3 @@
-import pygame as pg
 import pygame_menu as pgm
 import constants as c
 

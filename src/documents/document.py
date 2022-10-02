@@ -14,13 +14,12 @@ class Document:
         self.fact = True
 
     def present(self):
-        falsefy = random.randint(0, 6)
-        if falsefy > 3:
+        falsify = random.randint(0, 6)
+        if falsify > 3:
             self.falsifyinfo()
         return self
 
     def falsifyinfo(self):
-        # 0-img, 1-distance, 2-type, 3-luminosity, 4-size
         falsifyindex = [random.randint(1, 2), random.randint(1, 2), random.randint(1, 2), random.randint(1, 2),
                         random.randint(1, 2)]
         amountfalsified = 0
