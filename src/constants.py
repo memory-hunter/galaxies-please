@@ -1,7 +1,7 @@
 FPS = 60
 WIDTH = 1366
 HEIGHT = 768
-TITLE = "Space Checkpoint"
+TITLE = "Galaxies, Please!"
 BARLOW = "../res/fonts/barlow.ttf"
 TITILLIUM = "../res/fonts/titillium.ttf"
 ICON = "../res/logos/blackredbig.png"
