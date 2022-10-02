@@ -1,12 +1,22 @@
 [
   {
-    "name":"",
-    "img": "",
-    "jwstimage": "",
-    "distance": 100,
-    "type": "red dwarf",
-    "size": 100,
-    "constellation": "viri",
+    "name":"Cartwheel Galaxy",
+    "img": "../res/images/cartwheeltruecropped_out.jpg",
+    "jwstimage": "../res/images/cartwheeltrue.jpg",
+    "distance": "500Mly.",
+    "type": "S pec (Ring)",
+    "size": "144,300 ly.",
+    "constellation": "Sculptor",
+    "doctype": "galaxy"
+  },
+  {
+    "name":"NGC 7318",
+    "img": "../res/images/18falsecropped_out.png",
+    "jwstimage": "../res/images/quintettrue.jpg",
+    "distance": "25Mly.",
+    "type": "Spiral",
+    "size": "20,000 ly.",
+    "constellation": "Leo",
     "doctype": "galaxy"
   }
 ]
