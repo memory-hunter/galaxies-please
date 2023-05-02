@@ -1,7 +1,7 @@
 import json
 import random
 
-from src.documents import document
+from .document import Document
 
 
 class DocumentHandler:
@@ -13,7 +13,7 @@ class DocumentHandler:
         for i in range(0, len(self.playdocs)):
             x = self.data.index(self.playdocs[i])
             j = list(range(0, x)) + list(range(x+1, len(self.data)))
-            self.playdocs[i] = document.Document(
+            self.playdocs[i] = Document(
                 self.playdocs[i],
                 self.data[random.choice(j)]
             ).present()
@@ -23,7 +23,7 @@ class DocumentHandler:
         for i in range(0, len(self.playdocs)):
             x = self.data.index(self.playdocs[i])
             j = list(range(0, x)) + list(range(x+1, len(self.data)))
-            self.playdocs[i] = document.Document(
+            self.playdocs[i] = Document(
                 self.playdocs[i],
                 self.data[random.choice(j)]
             ).present()
